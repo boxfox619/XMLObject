@@ -37,8 +37,9 @@ public class XMLObject {
 		return props.getProperty(key);
 	}
 	
-	public void put(String key, String value){
+	public XMLObject put(String key, String value){
 		props.setProperty(key, value);
+		return this;
 	}
 	
 	@Override
